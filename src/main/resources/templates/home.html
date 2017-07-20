@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
 <head lang="en">
  
     <title>Agile Coaching</title>
@@ -35,306 +35,36 @@
 
 	    <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->    
-            <div class="navbar-header page-scroll">
-            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>   
-                <a class="navbar-brand" href="#page-top">Agile Coaching</a>        
-            </div>    
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio"><i class="fa fa-home fa-home-size" style="font-size:20px;"></i></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">Services</a>
-                    </li>
-                     <li class="page-scroll">
-                        <a href="#about">A Propos</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+         <th:block th:include="fragments/navigation::navigation"></th:block> 
+     <!-- /.container-fluid -->
     </nav>
     
     <!-- Header -->
     <header>
-		<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-		  <!-- Overlay -->
-		  <div class="overlay"></div>
-		
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#bs-carousel" data-slide-to="1"></li>
-		    <li data-target="#bs-carousel" data-slide-to="2"></li>
-		  </ol>
-		  
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-		    <div class="item slides active">
-		      <div class="slide-1"></div>
-		      <div class="hero">
-		        <hgroup>
-		            <h1>Agile avec Scrum</h1>        
-		            <h3>Résultats assurés et une satisfaction total au travail.</h3>
-		        </hgroup>
-		        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-		      </div>
-		    </div>
-		    <div class="item slides">
-		      <div class="slide-2"></div>
-		      <div class="hero">        
-		        <hgroup>
-		            <h1>Application Web</h1>        
-		            <h3>Service complet pour votre succès</h3>
-		        </hgroup>       
-		        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-		      </div>
-		    </div>
-		    <div class="item slides">
-		      <div class="slide-3"></div>
-		      <div class="hero">        
-		        <hgroup>
-		            <h1>Jira</h1>        
-		            <h3>Votre plattform pour la gestion de vos projects informatiques</h3>
-		        </hgroup>
-		        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-		      </div>
-		    </div>
-		    
-		  </div> 
-		</div>	        
+     <th:block th:include="fragments/header::header"></th:block> 		
     </header>
     
-    <!-- Portfolio Grid Section -->
+    <!-- Home Grid Section -->
     <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary"></hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt=""></img>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt=""></img>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt=""></img>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt=""></img>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt=""></img>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt=""></img>
-                    </a>
-                </div>
-            </div>
-        </div>
+         <th:block th:include="fragments/portfolio::portfolio"></th:block> 
     </section>
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>A propos d'agile Coaching</h2>
-                    <hr class="star-light"></hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p class="aboutagile">Accroître les résultats et le bien-être au travail avec <a href ="#">SCRUM</a>, la méthode <a href ="#">AGILE</a> de gestion des projects. Construire des applications webs et offir des produits efficaces et de meilleures qualités. Tel est le défi de notre équipe. Solutions simples et pragmatiques, les methodes agiles sont là pour y répondre.  </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Fasciner par la réussite dans de multiples projects, les méthodes agiles ont définitivement changé ma façon de vivre et de mener un projet. Agile Coaching vous aide à penser agile dans vos projects et vous accompagne dans le chemin de la réussite.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Services -->
+   <section class="success" id="service">
+        <th:block th:include="fragments/service::service"></th:block> 
     </section>
    
-    <!-- Service Section -->
-    <section  id="service">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>A propos d'agile Coaching</h2>
-                    <hr class="star-primary"></hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p class="aboutagile">Accroître les résultats et le bien-être au travail avec <a href ="#">SCRUM</a>, la méthode <a href ="#">AGILE</a> de gestion des projects. Construire des applications webs et offir des produits efficaces et de meilleures qualités. Tel est le défi de notre équipe. Solutions simples et pragmatiques, les methodes agiles sont là pour y répondre.  </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Fasciner par la réussite dans de multiples projects, les méthodes agiles ont définitivement changé ma façon de vivre et de mener un projet. Agile Coaching vous aide à penser agile dans vos projects et vous accompagne dans le chemin de la réussite.</p>
-                </div>
-            </div>
-        </div>
+    <!-- About Section -->
+    <section  id="about">
+         <th:block th:include="fragments/about::about"></th:block>   
     </section>
     <!-- Contact Section -->
     <section class="success" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contactez moi</h2>
-                    <hr class="star-light"></hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate="false">
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Nom" id="name" required="true" data-validation-required-message="Please enter your name."></input>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Address Email" id="email" required="true" data-validation-required-message="Please enter your email address."></input>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Téléphone" id="phone" required="true" data-validation-required-message="Please enter your phone number."></input>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Votre Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="true" data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br></br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Envoyez</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <th:block th:include="fragments/contact::contact"></th:block>  
     </section>
     
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Klenzepfad 
-                            <br></br>13407, Berlin</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Autour du web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                         </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3><a href="#about">A Propos d'agile Coaching</a></h3>
-                        <p>Travaillez avec <a href="#about">Agile Coaching</a> pour vos projects informatiques</p>
-                    </div>
-                     <div class="footer-col col-md-4">
-                     <h3>
-                     	<a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">Note sur l'auteur</a>
-                     </h3>
-                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Agile Coaching 2017
-                    </div>
-                </div>
-            </div>
-        </div>
+       <th:block th:include="fragments/footer::footer"></th:block> 
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -344,234 +74,18 @@
         </a>
     </div>
     
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary"></hr>
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""></img>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary"></hr>
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""></img>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary"></hr>
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt=""></img>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary"></hr>
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt=""></img>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary"></hr>
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""></img>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary"></hr>
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt=""></img>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Block Portfolio Modals -->
+<th:block th:include="fragments/modal/portfolioModal1::modal1"></th:block> 
+<th:block th:include="fragments/modal/portfolioModal2::modal2"></th:block>    
+<th:block th:include="fragments/modal/portfolioModal3::modal3"></th:block> 
+<th:block th:include="fragments/modal/portfolioModal4::modal4"></th:block>   
+<th:block th:include="fragments/modal/portfolioModal5::modal4"></th:block>  
+<th:block th:include="fragments/modal/portfolioModal6::modal6"></th:block> 
+ <!-- End block Portfolio Modals -->
     
     
     
     
-
  <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -587,5 +101,11 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" th:if="false"></script>
+<script src="http://blackpeppersoftware.github.io/thymeleaf-fragment.js/thymeleaf-fragment.js"
+    defer="defer" th:if="false"></script>
+
+    
 </body>
 </html>
