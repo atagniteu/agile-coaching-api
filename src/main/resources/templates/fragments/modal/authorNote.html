@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head lang="en" th:fragment="author">
+<meta charset="ISO-8859-1"></meta>
+<title>Portfolio Modal</title>
+</head>
+<body>
+<div th:fragment="author">
+<div class="portfolio-modal modal fade" id="authorNote" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Note Sur l'auteur</h2>
+                            <hr class="star-primary"></hr>
+                              <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="" ></img>         
+                            <p>Ingenieur en économie de gestion avec environ 10 ans d'experience dans le developpement des applications webs. Pratique des methodes agiles de developpement des projects avec SCRUM . Jira tool favori pour le management des Projects.Certificat IBM AGILE DESIGN THINKING</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

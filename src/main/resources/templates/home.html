@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
-<head lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head leng="en">
  
-    <title>Agile Coaching</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+    <title th:text="#{home.title}"></title>
+    <meta charset="UTF-8"></meta>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <meta name="description" content=""></meta>
@@ -46,6 +46,8 @@
     
     <!-- Home Grid Section -->
     <section id="portfolio">
+    <h1 th:text="#{nav.jor}"></h1>
+      <h1>BONJOnée</h1>
          <th:block th:include="fragments/portfolio::portfolio"></th:block> 
     </section>
     <!-- Services -->
@@ -81,6 +83,7 @@
 <th:block th:include="fragments/modal/portfolioModal4::modal4"></th:block>   
 <th:block th:include="fragments/modal/portfolioModal5::modal4"></th:block>  
 <th:block th:include="fragments/modal/portfolioModal6::modal6"></th:block> 
+<th:block th:include="fragments/modal/authorNote::author"></th:block>
  <!-- End block Portfolio Modals -->
     
     
