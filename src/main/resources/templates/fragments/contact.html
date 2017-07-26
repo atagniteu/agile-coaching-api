@@ -3,12 +3,11 @@
 <head lang="en" th:fragment="contact">
 <meta charset="ISO-8859-1"></meta>
 <title>Contact</title>
- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 <div th:fragment="contact">
 <div class="container">
-  <div class="row">
+  <div class="row contactme">
       <div class="col-lg-12 text-center">
           <h2>Contactez moi</h2>
           <hr class="star-light"></hr>
@@ -19,7 +18,7 @@
       <div class="col-lg-8 col-lg-offset-2">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-	            <form name="sentMessage" id="contactForm" novalidate="false">
+	            <form action="mailto:atagniteu@gmail.com" method="post" name="sentMessage" id="contactForm" novalidate="false" enctype="text/plain">
 	                <div class="row control-group">
 	                    <div class="form-group col-xs-12 floating-label-form-group controls">
 	                        <label>Name</label>
