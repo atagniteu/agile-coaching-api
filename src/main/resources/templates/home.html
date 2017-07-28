@@ -46,8 +46,6 @@
     
     <!-- Home Grid Section -->
     <section id="portfolio">
-    <h1 th:text="#{nav.jor}"></h1>
-      <h1>BONJOnée</h1>
          <th:block th:include="fragments/portfolio::portfolio"></th:block> 
     </section>
     <!-- Services -->
@@ -62,6 +60,11 @@
     <!-- Contact Section -->
     <section class="success" id="contact">
         <th:block th:include="fragments/contact::contact"></th:block>  
+    </section>
+    
+        <!-- Author Note Section -->
+    <section id="authornote">
+        <th:block th:include="fragments/authornote::authornote"></th:block>  
     </section>
     
     <!-- Footer -->

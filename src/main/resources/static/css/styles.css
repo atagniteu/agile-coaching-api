@@ -151,7 +151,7 @@ p.aboutagile a.active, a:active, a:focus, a:hover{
 
 .btn-success {
   color: white;
-  background-color: #2c3e50;
+  background-color: #18BC9C;
   border-color: #11866f;
   font-weight: 700;
 }
@@ -186,6 +186,10 @@ p.aboutagile a.active, a:active, a:focus, a:hover{
 	margin: 0 auto 16px auto;
 	border-radius: 50%;
 }
+.form-control, .help-block{
+	color: #ffffff;
+}
+
 
 
 

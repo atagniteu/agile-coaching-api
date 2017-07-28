@@ -120,6 +120,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: white;
+  background: #18BC9C;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -135,7 +136,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li a:active {
   color: white;
 }
-.navbar-custom .navbar-nav li.active a {
+.navbar-custom .navbar-nav li.active a .navbar-nav.active{
   color: white;
   background: #18BC9C;
 }
@@ -165,7 +166,7 @@ header .intro-text .skills {
     transition: padding 0.3s;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
+    font-size: 1.01em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
